@@ -46,7 +46,7 @@ jobs:
             npm run backend:test
       - run:
           name: BackEnd Deploy
-          commad: |
+          command: |
             npm run backend:deploy
       - run:
           name: FrontEnd App Deploy
