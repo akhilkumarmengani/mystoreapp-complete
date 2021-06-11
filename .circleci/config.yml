@@ -24,14 +24,14 @@ jobs:
       #       google-chrome --version
       #       chromedriver --version
       #     name: Check install
-      # - run:
-      #     name: FrontEnd Install
-      #     command: |
-      #       npm run frontend:install
-      # - run:
-      #     name: Backend Install
-      #     command: |
-      #       npm run backend:install
+      - run:
+          name: FrontEnd Install
+          command: |
+            npm run frontend:install
+      - run:
+          name: Backend Install
+          command: |
+            npm run backend:install
       # - run:
       #     name: FrontEnd Build
       #     command: |
