@@ -1,21 +1,21 @@
 branch-defaults:
   default:
-    environment: Storeapp-env
+    environment: Mystoreapp-env
 deploy:
-  artifact: ./dist/Archive.zip
+  artifact: dist/Archive.zip
 environment-defaults:
-  Storeapp-env:
+  Mystoreapp-env:
     branch: null
     repository: null
 global:
-  application_name: store-app
+  application_name: mystoreapp
   default_ec2_keyname: null
-  default_platform: Node.js 12 running on 64bit Amazon Linux 2
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
   default_region: us-east-1
   include_git_submodules: true
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: ebdeploy
+  profile: default
   sc: null
   workspace_type: Application
