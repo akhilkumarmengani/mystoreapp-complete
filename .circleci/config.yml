@@ -45,10 +45,6 @@ jobs:
       #     command: |
       #       npm run backend:test
       - run:
-          name: AWS Profile
-          command: |
-            aws configure 
-      - run:
           name: BackEnd Deploy
           command: |
             npm run backend:deploy
