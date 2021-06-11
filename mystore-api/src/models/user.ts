@@ -1,9 +1,10 @@
 import Client from '../database';
 //import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+//import { config } from '../config/config';
 
-// const saltRounds: string = process.env.SALT_ROUNDS as string;
-// const pepper: string = process.env.BCRYPT_PASSWORD as string;
+//const saltRounds: string = config.salt_rounds as string;
+//const pepper: string = config.bcrypt_password as string;
 
 export type User = {
   id?: number;

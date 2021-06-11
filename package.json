@@ -5,6 +5,7 @@
     "frontend:build": "cd mystore-frontend && npm run build",
     "backend:build": "cd mystore-api && npm run build",
     "backend:test": "cd mystore-api && npm run test",
+    "backend:deploy": "cd mystore-api && npm run deploy-eb",
     "frontend:deploy": "cd mystore-frontend && npm run deploy-s3"
   }
 }

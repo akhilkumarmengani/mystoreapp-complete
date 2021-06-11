@@ -1,5 +1,6 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
+import { config } from '../config/config';
 
 const verifyAuthToken = (
   req: express.Request,
@@ -9,7 +10,7 @@ const verifyAuthToken = (
   try {
     const authorizationHeader: string = req.headers.authorization as string;
     const token: string = authorizationHeader.split(' ')[1];
-    jwt.verify(token, process.env.TOKEN_SECRET as string);
+    jwt.verify(token, config.token_secret as string);
     next();
   } catch (error) {
     res.status(401);
