@@ -1,7 +1,6 @@
 .env
 
-bin/
-.elasticbeanstalk
+#.elasticbeanstalk
 
 node_modules/
 # Elastic Beanstalk Files
