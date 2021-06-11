@@ -1,6 +1,8 @@
 branch-defaults:
   default:
     environment: Storeapp-env
+deploy:
+  artifact: ./dist/Archive.zip
 environment-defaults:
   Storeapp-env:
     branch: null
@@ -14,6 +16,6 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: akhilkumarm
+  profile: ebdeploy
   sc: null
   workspace_type: Application

@@ -2,11 +2,11 @@
 
 node_modules/
 # Elastic Beanstalk Files
-.elasticbeanstalk/*
+#.elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-dist/src/
-dist/spec/
+#dist/src/
+#dist/spec/
 
 .circleci
