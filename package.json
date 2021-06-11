@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "frontend:install": "cd my-store && npm install -g @angular/cli && npm install --save-dev @angular-devkit/build-angular",
-    "backend:install": "cd StoreFrontBackend-nodejs && npm install",
-    "frontend:build": "cd my-store && npm run build",
-    "backend:build": "cd StoreFrontBackend-nodejs && npm run build",
-    "backend:test": "cd StoreFrontBackend-nodejs && npm run test",
-    "frontend:deploy": "cd my-store && npm run deploy-s3"
+    "frontend:install": "cd mystore-frontend && npm install -g @angular/cli && npm install --save-dev @angular-devkit/build-angular",
+    "backend:install": "cd mystore-api && npm install",
+    "frontend:build": "cd mystore-frontend && npm run build",
+    "backend:build": "cd mystore-api && npm run build",
+    "backend:test": "cd mystore-api && npm run test",
+    "frontend:deploy": "cd mystore-frontend && npm run deploy-s3"
   }
 }
