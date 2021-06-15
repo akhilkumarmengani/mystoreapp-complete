@@ -34,6 +34,19 @@ Follow the steps to deploy the API in AWS.
 8. Add Inbound rules to enable requests from specific machines
 7. Test the APIs using Postman
 
+### Amazon S3
+I used Amazon S3 to host the angular web application. Follow the steps to make it available on internet.
+1. Go to AWS management console [AWS Console](https://console.aws.amazon.com/console/)
+2. Create S3 bucket
+3. Enable static web hosting in properties
+4. Write a bucket policy in Permissions
+5. Make the bucket public
+6. Add index.html in properties as index file
+7. Add the files to the bucket which are generated after ng build (do not add the folder, but add all the files from build folder to the bucket)
+8. Ensure index.html file uploaded 
+9. Go to Properties, and find the application URL under web hosting
+
+
 ## Functionality
 
 - User will be able to add to products to the cart from the main page.
