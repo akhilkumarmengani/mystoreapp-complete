@@ -1,13 +1,38 @@
 # My Store Application
 E-commerce website - an application that allows users to view a list of available products to purchase, add them to a shopping cart, and ultimately complete the checkout process.
 
-Application on S3: [a link](http://mystore-123456.s3-website-us-east-1.amazonaws.com/)
+Application on S3: [App](http://mystore-123456.s3-website-us-east-1.amazonaws.com/)
 
 ## Technologies
 - Angular
 - Express
 - Postgres
 - AWS S3, Elastic BeanStalk, RDS
+
+## Deployment
+
+### RDS Database
+Follow the below steps to setup database
+1. Go to AWS management console [AWS Console](https://console.aws.amazon.com/console/)
+2. Search for 'RDS'
+3. Create a Database
+4. Enter database name, username, and password.
+5. Make the database public to be accessible by the application.
+6. Note down the endpoint and port.
+7. Username,password,dbname,endpoint and port are used in establishing connection with the database
+8. By default, database name should be 'postgres'
+
+
+### Elastic Beanstalk
+Follow the steps to deploy the API in AWS.
+1. Go to AWS management console [AWS Console](https://console.aws.amazon.com/console/)
+2. Search for 'Elastic Beanstalk' in services
+3. Create an enironment and then choose the desired service options suitable for the application.
+4. Upload the zip folder (files generated after build)
+5. In Configuration, add all the environment variables used in the code.
+6. Deploy
+8. Add Inbound rules to enable requests from specific machines
+7. Test the APIs using Postman
 
 ## Functionality
 
@@ -19,4 +44,4 @@ Application on S3: [a link](http://mystore-123456.s3-website-us-east-1.amazonaws
 - User need to give valid information before placing the order.
 
 
-- ![#1589F0] Please refer to documentation for dependencies, project architecture, and pipeline`#1589F0`
+Please refer to documentation for dependencies, project architecture, and pipeline
