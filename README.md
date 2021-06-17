@@ -46,6 +46,11 @@ I used Amazon S3 to host the angular web application. Follow the steps to make i
 8. Ensure index.html file uploaded 
 9. Go to Properties, and find the application URL under web hosting
 
+### CircleCI
+Implemented CI/CD pipeline using CicleCI.
+Whenever code is pushed into database setup, build, test and deploy scripts are run.
+Added AWS Keys and region as environment variables
+
 
 ## Functionality
 
