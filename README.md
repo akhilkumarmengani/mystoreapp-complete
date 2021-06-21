@@ -46,6 +46,18 @@ I used Amazon S3 to host the angular web application. Follow the steps to make i
 8. Ensure index.html file uploaded 
 9. Go to Properties, and find the application URL under web hosting
 
+### Deploying the API
+1. Create an IAM in AWS console 
+2. Create Security Groups and add access to various services for that group.
+3. Save the credentials key and value/ download csv credentials.
+4. ``` aws configure profile <name> ``` This create a profile under .aws folder in home directory
+5. ``` eb configure profile <name> ```
+6. ``` eb init ``` creates elastic beanstalk folder in the current directory
+7. Add deploy artifact and path to the zip file to directly upload the zip file to the environment (Did not work in my case)
+8. ``` eb deploy ``` deploys the application to the cloud.
+9. ``` eb health ``` to check the status of the environment.
+10. Now open the console and check the status to verify. Note down the api host address and port number to test in postman.
+
 ### CircleCI
 Implemented CI/CD pipeline using CicleCI.
 Whenever code is pushed into database setup, build, test and deploy scripts are run.
